@@ -8,6 +8,9 @@ const userSchema = new Schema({
     tone: { type: String, default: 'gentle' },
     goals: [String]
   },
+  parentName: { type: String, required: true },
+  parentEmail: { type: String, required: true },
+  parentPhone: { type: String, default: '' },
   streak: { type: Number, default: 0 },
   points: { type: Number, default: 0 },
   badges: [String]
